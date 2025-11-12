@@ -35,6 +35,7 @@ Sail will pull and start the Docker containers automatically.
 Open **`laravel-todos/.env`** and set:
 
 ```env
+CODESPACE_NAME=mycodespace-name-xxxxxxxxxxxxxxx
 APP_URL=https://${CODESPACE_NAME}-80.app.github.dev
 VITE_APP_URL="${APP_URL}"
 ASSET_URL=/
