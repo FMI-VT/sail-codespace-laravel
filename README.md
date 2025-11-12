@@ -27,6 +27,7 @@ php artisan sail:install --with=mysql,redis
 ```
 
 Sail will pull and start the Docker containers automatically.
+
 This executes for 3-4 minutes, you can do step 4️⃣ and 5️⃣ while it is executing.
 
 ---
