@@ -87,6 +87,7 @@ This scaffolds `/login`, `/register`, and `/profile`.
 | Run migrations | `./vendor/bin/sail artisan migrate` |
 | Clear caches | `./vendor/bin/sail artisan optimize:clear` |
 | Open Tinker | `./vendor/bin/sail artisan tinker` |
+| Routes List | `./vendor/bin/sail artisan route:list` |
 
 ---
 
