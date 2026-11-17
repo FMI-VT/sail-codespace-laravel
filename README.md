@@ -22,6 +22,7 @@ cd laravel-todos
 ## 3️⃣ Install Sail with MySQL and Redis
 
 ```bash
+composer require laravel/sail --dev
 php artisan sail:install --with=mysql,redis
 ./vendor/bin/sail up -d
 ```
