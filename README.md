@@ -61,7 +61,11 @@ return Application::configure(basePath: dirname(__DIR__))
         // Trust the Codespaces / Docker proxy headers
         $middleware->trustProxies(at: '*');
     })
-    ->create();
+    ->withExceptions(function (Exceptions $exceptions): void {
+        $exceptions->shouldRenderJsonWhen(
+            fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
+        );
+    })->create();
 ```
 
 ---
